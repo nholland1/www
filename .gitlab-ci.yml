@@ -10,7 +10,7 @@ pages:
     paths:
     - Staging
   only:
-  - Staging
+  - Master
   environment:
     name: staging
     url: http://www.thegreat.uk/Staging
