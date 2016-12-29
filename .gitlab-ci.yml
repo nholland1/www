@@ -16,8 +16,8 @@ build:
 deploy_staging:
   stage: deploy
   script:
-    - echo "Deploy to staging server"
-    pages:
+  - echo "Deploy to staging server"
+  pages:
   - mkdir .Staging
   - cp -r * .Staging
   - mv .Staging Staging
@@ -29,5 +29,3 @@ deploy_staging:
     url: http://www.thegreat.uk/Staging
   only:
   - master
-  
-
