@@ -3,6 +3,7 @@
 pages:
   stage: deploy
   script:
+  - ssh root@thegreat.uk
   - mkdir .public
   - cp -r * .public
   - mv .public public
