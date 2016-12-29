@@ -17,7 +17,6 @@ deploy_staging:
   stage: deploy
   script:
   - echo "Deploy to staging server"
-  pages:
   - mkdir .Staging
   - cp -r * .Staging
   - mv .Staging Staging
