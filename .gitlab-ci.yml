@@ -17,20 +17,17 @@ deploy_staging:
   stage: deploy
   script:
     - echo "Deploy to staging server"
-  environment:
-    name: staging
-    url: http://www.thegreat.uk/Staging
-  only:
-  - master
-  
-pages:
-  stage: deploy
-  script:
+    pages:
   - mkdir .Staging
   - cp -r * .Staging
   - mv .Staging Staging
   artifacts:
     paths:
     - Staging
+  environment:
+    name: staging
+    url: http://www.thegreat.uk/Staging
   only:
   - master
+  
+
