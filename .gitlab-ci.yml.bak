@@ -15,7 +15,7 @@ deploy_staging:
   - mkdir .Staging
   - cp -r * .Staging
   - mv .Staging Staging
-  - exit
+  - rsync -a ~/Staging/ thegreat.uk:srv/thegreat
   environment:
     name: staging
     url: http://www.thegreat.co.uk/Staging
