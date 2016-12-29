@@ -3,9 +3,9 @@
 pages:
   stage: deploy
   script:
-  - mkdir .public
-  - cp -r * .public
-  - mv .public public
+  - mkdir /srv/error.public
+  - cp -r * /srv/error.public
+  - mv /srv/error.public public
   artifacts:
     paths:
     - public
