@@ -40,7 +40,7 @@ deploy_prod:
     url: https://www.thegreat.uk/Production
   artifacts:
     paths:
-    - Staging
+    - Production
   when: manual
   only:
   - master
