@@ -3,9 +3,9 @@
 pages:
   stage: deploy
   script:
-  - sudo mkdir /srv/error.public
-  - sudo cp -r * /srv/error.public
-  - sudo mv /srv/error.public public
+  - mkdir .www
+  - cp -r * .www
+  - mv .www www
   artifacts:
     paths:
     - public
