@@ -14,7 +14,7 @@ deploy_staging:
   - echo "Deploy to staging server"
   - mkdir .Staging
   - cp -r * .Staging
-  - mv .Staging /srv/thegreat/Staging
+  - mv .Staging Staging
   - exit
   environment:
     name: staging
