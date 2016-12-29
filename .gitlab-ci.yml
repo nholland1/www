@@ -11,3 +11,6 @@ pages:
     - Staging
   only:
   - Staging
+  environment:
+    name: staging
+    url: http://www.thegreat.uk/Staging
