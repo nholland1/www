@@ -12,7 +12,6 @@ deploy_staging:
   stage: deploy
   script:
   - echo "Deploy to staging server"
-  - ssh thegreat.uk
   - mkdir .Staging
   - cp -r * .Staging
   - mv .Staging /srv/thegreat/Staging
