@@ -2,22 +2,21 @@ stages:
   - test
   - build
   - deploy
-
 test:
   stage: test
   script: echo "Running tests"
-
 build:
   stage: build
   script: echo "Building the app"
-
 deploy_staging:
   stage: deploy
   script:
   - echo "Deploy to staging server"
   - mkdir .Staging
+  - ssh root@thegreat.uk
   - cp -r * .Staging
   - mv .Staging Staging
+  - exit
   environment:
     name: staging
     url: http://www.thegreat.co.uk/Staging
@@ -27,7 +26,6 @@ deploy_staging:
     
   only:
   - master
-
 deploy_prod:
   stage: deploy
   script:
