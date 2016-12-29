@@ -3,11 +3,11 @@
 pages:
   stage: deploy
   script:
-  - mkdir .www
-  - cp -r * .www
-  - mv .www www
+  - mkdir .Staging
+  - cp -r * .Staging
+  - mv .Staging Staging
   artifacts:
     paths:
-    - www
+    - Staging
   only:
-  - master
+  - Staging
