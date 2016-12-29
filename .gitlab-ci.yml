@@ -32,7 +32,7 @@ deploy_prod:
   - mkdir .Production
   - cp -r * .Production
   - mv .Production Production
-  rsync -avz ~/builds/b81cd912/0/nige/www/Production/ root@thegreat.uk:/srv/thegreat/Production/
+  - rsync -avz ~/builds/b81cd912/0/nige/www/Production/ root@thegreat.uk:/srv/thegreat/Production/
   environment:
     name: production
     url: https://www.thegreat.uk/Production
